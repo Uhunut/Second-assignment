@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades Table</title>
+    <style>
+        #page-heading {
+            color: #2a4d69;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: #4fc3f7;
+            color: #fff;
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: center;
+        }
+        td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        tr:nth-child(even) td {
+            background-color: #e3f2fd;
+        }
+        tr:nth-child(odd) td {
+            background-color: #fff;
+        }
+        .highlight-row td {
+            background-color: #ffe082 !important;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="page-heading">Student Grades</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Madina Ahmetova</td>
+                <td>Math</td>
+                <td>A</td>
+            </tr>
+            <tr class="highlight-row">
+                <td>Adelya Abilkasova</td>
+                <td>Science</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>Alikhan Suleimenov</td>
+                <td>History</td>
+                <td>A-</td>
+            </tr>
+            <tr>
+                <td>Omar Murat</td>
+                <td>English</td>
+                <td>B</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <title>Layout</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #eaeaea;
+        }
+
+        header {
+            background-color: rgb(102, 111, 205);
+            padding: 30px;
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+
+        section {
+            border: 2px solid #6c75b8;
+            margin: 20px;
+        }
+
+        nav {
+            float: left;
+            width: 25%;
+            background: #a39f9f;
+            padding: 20px;
+            border-right: 2px solid #6c75b8;
+            min-height: 200px;
+            box-sizing: border-box;
+            color:rgb(0, 0, 0)
+        }
+
+        nav ol {
+            margin: 0;
+        }
+
+        nav li {
+            margin-bottom: 15px;
+        }
+
+
+        nav a:hover {
+            background: #d1d1f7;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 75%;
+            background-color: rgb(197, 191, 191);
+            border-left: 2px solid #6c75b8;
+            min-height: 200px;
+            box-sizing: border-box;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: rgb(102, 111, 205);
+            padding: 10px;
+            text-align: center;
+            color: white;
+            border-top: 3px solid #6c75b8;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+                float: none;
+                border: none;
+                min-height: unset;
+            }
+            section {
+                margin: 10px;
+                border-radius: 4px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header> 
+        <h2>Welcome to my website!</h2>
+</header>
+
+<section>
+        <nav>
+            <h2 style="height: 40px;">Menu</h2>
+                <ul> 
+                        <li><a href="#">Link.1</a></li>
+                        <li><a href="#">Link.2</a></li>
+                        <li><a href="#">Link.3</a></li>
+                </ul>
+        </nav>
+
+        <article>
+                <h1>Aside</h1>
+                <p>There could be info about your product! Now give me your money.</p>
+        </article>
+</section>
+
+<footer>
+        <p>Created by Adelya | All rights are reserved</p>
+</footer>
+
+</body>
+</html>
